@@ -17,12 +17,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = "8574019554:AAEzM2EdEqu2da9buOI62cB1WzCuT6ZN2hI"
+BOT_TOKEN = "8708867522:AAE36iftR5fEmItTOFD2LUEzxmeDnb-1In0"
 YML_FILE_PATH = ".github/workflows/main.yml"
 BINARY_FILE_NAME = "soul"
 # ADMIN_IDS = [521756472, 7733336238,7772881209] 
-ADMIN_IDS = [8125487901]
-OWNER_IDS = [8125487901]
+ADMIN_IDS = [8682171123]
+OWNER_IDS = [8682171123]
 
 WAITING_FOR_BINARY = 1
 WAITING_FOR_BROADCAST = 2
@@ -1246,7 +1246,7 @@ async def setmaxattack_command(update: Update, context: ContextTypes.DEFAULT_TYP
     
     try:
         max_attacks = int(context.args[0])
-        if max_attacks < 1 or max_attacks > 100:
+        if max_attacks < 1 or max_attacks > 1000:
             await update.message.reply_text("❌ ᴍᴀxɪᴍᴜᴍ ᴀᴛᴛᴀᴄᴋs ᴍᴜsᴛ ʙᴇ ʙᴇᴛᴡᴇᴇɴ 1 ᴀɴᴅ 100")
             return
         
